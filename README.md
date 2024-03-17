@@ -37,3 +37,9 @@ A
 C
 2024-03-17T13:55:09.651Z  INFO 10547 --- [demo] [           main] DemoApplication         : Started DemoApplication in 1.025 seconds (process running for 6.81)
 ```
+- output after corrections with xml for the bean:
+```bash
+A
+C
+B
+```
