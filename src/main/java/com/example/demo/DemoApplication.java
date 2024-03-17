@@ -2,18 +2,17 @@ package com.example.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 @SpringBootApplication
 public class DemoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
-	}
+		ConfigurableApplicationContext context =
+			new ClassPathXmlApplicationContext(new String[] {"beans.xml"});
 
-	@Bean
-	AdafaceBean adafaceBean() {
-		return new AdafaceBean();
+		AdafaceBean cust = (AdafaceBean)context.getBean("AdafaceBean");
 	}
-
 }
