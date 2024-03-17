@@ -4,7 +4,7 @@ Spring allows specific operator to be performed after the bean is initialized an
 bean destroyed.  Review the following sample Bean that implements init methods and override afterPropertiesSet.
 
 ```java
-import com.example.demo.InitiaingBean;
+
 
 public class AdafaceBean implements InitiaingBean {
 
